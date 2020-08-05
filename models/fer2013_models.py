@@ -81,7 +81,7 @@ class BaseNet(nn.Module):
 
     def __init__(self, in_channels=1, num_classes=7):
         super(BaseNet, self).__init__()
-        norm_layer = nn.BatchNorm2d
+        # norm_layer = nn.BatchNorm2d
 
         self.conv1 = nn.Conv2d(
             in_channels=1,

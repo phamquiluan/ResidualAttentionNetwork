@@ -7,7 +7,7 @@ import torch
 
 class conv_block(nn.Module):
     """
-    Convolution Block 
+    Convolution Block
     """
 
     def __init__(self, in_ch, out_ch):

@@ -308,7 +308,7 @@ def main_worker(gpu, ngpus_per_node, args):
     if IS_SM:
         # optionally resume from a checkpoint /opt/ml/checkpoints/checkpoints/
         checkpoint_dir = "/opt/ml/checkpoints/checkpoints/"
-        checkpoint_list = os.listdir(checkpoint_dir)
+        # checkpoint_list = os.listdir(checkpoint_dir)
 
         logger.info("Checking checkpoints dir..{}".format(checkpoint_dir))
         logger.info(os.listdir(checkpoint_dir))

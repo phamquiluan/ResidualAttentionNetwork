@@ -138,7 +138,8 @@ class Inception3(nn.Module):
         x = self.Mixed_6e(x)
         # N x 768 x 17 x 17
         if self.training and self.aux_logits:
-            aux = self.AuxLogits(x)
+            # aux = self.AuxLogits(x)
+            pass
         # N x 768 x 17 x 17
         x = self.Mixed_7a(x)
         # N x 1280 x 8 x 8

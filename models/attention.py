@@ -19,7 +19,7 @@ def transpose(in_channels, out_channels, kernel_size=2, stride=2):
 def downsample(in_channels, out_channels):
     return nn.Sequential(
         conv1x1(in_channels, out_channels),
-        nn.BatchNorm2d(num_features(out_channels)),
+        nn.BatchNorm2d(num_features=out_channels),
         nn.ReLU(inplace=True),
     )
 

@@ -39,7 +39,7 @@ class ResNetCenterLoss(ResNet):
         x = self.avgpool(x)
         x = torch.flatten(x, 1)
 
-        features = self.relu(self.center_loss_fc(x))
+        # features = self.relu(self.center_loss_fc(x))
         outputs = self.fc(x)
         # return outputs, features
         return outputs
