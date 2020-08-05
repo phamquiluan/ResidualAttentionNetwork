@@ -2,7 +2,7 @@
 import os
 from setuptools import find_packages, setup
 
-version = "0.0.1"
+version = "0.1.0"
 cwd = os.path.dirname(os.path.abspath(__file__))
 
 
@@ -29,6 +29,6 @@ setup(
         "imgaug",
         "tensorboard",
         "sklearn",
-        "gputil"
+        "gputil",
     ],
 )
