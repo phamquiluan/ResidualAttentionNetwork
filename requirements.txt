@@ -1,6 +1,0 @@
-imgaug
-tensorboard
-pytorchcv
-sklearn
-natsort
-gputil

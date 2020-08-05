@@ -20,5 +20,15 @@ setup(
     version=version,
     packages=find_packages(exclude=["models"]),
     include_package_data=True,
-    install_requires=["torch", "torchvision", "pytorchcv", "tqdm", "natsort"],
+    install_requires=[
+        "torch",
+        "torchvision",
+        "pytorchcv",
+        "tqdm",
+        "natsort",
+        "imgaug",
+        "tensorboard",
+        "sklearn",
+        "gputil"
+    ],
 )
