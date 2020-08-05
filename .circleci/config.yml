@@ -1,0 +1,23 @@
+version: 2.1
+
+workflows:
+  main:
+    jobs:
+      - build-and-test
+
+
+jobs:
+  build-and-test:
+    executor: python/default
+    steps:
+      - checkout
+      - run:
+          name: "Run"
+          command: |
+            pip install pytest
+            pip install flake8
+
+            flake8 .
+            pytest .
+
+
