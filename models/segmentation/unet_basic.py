@@ -3,12 +3,25 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+
 def block(in_channels, out_channels, kernel_size=3, stride=1, padding=1):
     return nn.Sequential(
-        nn.Conv2d(in_channels, out_channels, kernel_size=kernel_size, stride=stride, padding=padding),
+        nn.Conv2d(
+            in_channels,
+            out_channels,
+            kernel_size=kernel_size,
+            stride=stride,
+            padding=padding,
+        ),
         nn.BatchNorm2d(num_features=out_channels),
         nn.ReLU(inplace=True),
-        nn.Conv2d(out_channels, out_channels, kernel_size=kernel_size, stride=stride, padding=padding),
+        nn.Conv2d(
+            out_channels,
+            out_channels,
+            kernel_size=kernel_size,
+            stride=stride,
+            padding=padding,
+        ),
         nn.BatchNorm2d(num_features=out_channels),
         nn.ReLU(inplace=True),
     )
@@ -16,9 +29,11 @@ def block(in_channels, out_channels, kernel_size=3, stride=1, padding=1):
 
 def up_pooling(in_channels, out_channels, kernel_size=2, stride=2):
     return nn.Sequential(
-        nn.ConvTranspose2d(in_channels, out_channels, kernel_size=kernel_size, stride=stride),
+        nn.ConvTranspose2d(
+            in_channels, out_channels, kernel_size=kernel_size, stride=stride
+        ),
         nn.BatchNorm2d(out_channels),
-        nn.ReLU(inplace=True)
+        nn.ReLU(inplace=True),
     )
 
 
@@ -26,9 +41,9 @@ class Unet(nn.Module):
     def __init__(self, in_channels, num_classes):
         super().__init__()
 
-        _filters = [64, 128, 256, 512, 1024]
+        # filters = [64, 128, 256, 512, 1024]
         filters = [32, 64, 128, 256, 512]
-        _filters = [16, 32, 64, 128, 256]
+        # filters = [16, 32, 64, 128, 256]
 
         self.conv1 = block(in_channels, filters[0])
         self.conv2 = block(filters[0], filters[1])
