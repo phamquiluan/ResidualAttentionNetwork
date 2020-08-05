@@ -1,5 +1,9 @@
 # ImageNet training in PyTorch - Residual Attention Network
 
+[![version](https://img.shields.io/badge/version-v0.0.1-blue)](https://github.com/phamquiluan/ResidualAttentionNetwork)
+[![phamquiluan/ResidualAttentionNetwork](https://circleci.com/gh/phamquiluan/ResidualAttentionNetwork.svg?style=shield&circle-token=f96e4e1a66e86406f9a01512c52e1185b731ab0e)](https://app.circleci.com/pipelines/github/phamquiluan/ResidualAttentionNetwork)
+
+
 This implements training of [Residual Attention Network](https://arxiv.org/abs/1704.06904) on the ImageNet dataset, and provide the pretrained weights.
 
 
