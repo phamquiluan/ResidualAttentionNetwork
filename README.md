@@ -1,6 +1,6 @@
 # ImageNet training in PyTorch - Residual Attention Network
 
-[![version](https://img.shields.io/badge/version-v0.1.0-blue)](https://github.com/phamquiluan/ResidualAttentionNetwork)
+[![version](https://img.shields.io/badge/version-v0.2.0-blue)](https://github.com/phamquiluan/ResidualAttentionNetwork)
 [![phamquiluan/ResidualAttentionNetwork](https://circleci.com/gh/phamquiluan/ResidualAttentionNetwork.svg?style=shield&circle-token=f96e4e1a66e86406f9a01512c52e1185b731ab0e)](https://app.circleci.com/pipelines/github/phamquiluan/ResidualAttentionNetwork)
 [![phamquiluan/ResidualAttentionNetwork](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/phamquiluan/ResidualAttentionNetwork)
 
@@ -11,7 +11,7 @@ This implements training of [Residual Attention Network](https://arxiv.org/abs/1
 # Install 
 
 ```bash
-pip install 'git+ssh://git@github.com/phamquiluan/ResidualAttentionNetwork.git@v0.1.0'
+pip install 'git+ssh://git@github.com/phamquiluan/ResidualAttentionNetwork.git@v0.2.0'
 ```
 
 # Quickstart

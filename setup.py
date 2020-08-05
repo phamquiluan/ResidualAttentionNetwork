@@ -2,7 +2,7 @@
 import os
 from setuptools import find_packages, setup
 
-version = "0.1.0"
+version = "0.2.0"
 cwd = os.path.dirname(os.path.abspath(__file__))
 
 
@@ -15,7 +15,7 @@ def write_version_file():
 write_version_file()
 
 setup(
-    name="ResisualAttentionNetwork",
+    name="resattnet",
     description="Pre-trained Residual Attention Network",
     version=version,
     packages=find_packages(exclude=["models"]),
